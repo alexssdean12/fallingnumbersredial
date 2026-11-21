@@ -1,0 +1,25 @@
+/* Falling Numbers: Redial — support site. Blue-backlit LCD look from the game. */
+:root{--bg:#dde8f2;--lcd:#a9d4f5;--ink:#0d2340;--muted:#3f5a78;--card:#f4f8fb;--line:#0d2340}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Rubik,system-ui,-apple-system,sans-serif}
+a{color:#1a5fa8}
+a:focus-visible{outline:3px solid #4fb4ff;outline-offset:2px}
+header{background:var(--lcd);border-bottom:4px solid var(--line);padding:36px max(5vw,16px) 28px;
+  background-image:repeating-linear-gradient(0deg,rgba(0,0,40,.04) 0 1px,transparent 1px 3px)}
+.wrap{max-width:760px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:18px}
+.brand img{width:84px;height:84px;border-radius:19px;box-shadow:0 6px 16px rgba(13,35,64,.25)}
+h1{font:400 clamp(18px,4vw,26px)/1.3 "Press Start 2P",monospace;margin:0}
+.tag{margin:8px 0 0;color:var(--muted)}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+nav a[aria-current]{border-color:var(--ink)}
+main{padding:32px max(5vw,16px) 56px}
+h2{font:400 15px/1.4 "Press Start 2P",monospace;margin:36px 0 12px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:10px;padding:18px 20px}
+.contact{font-size:19px;font-weight:500}
+details{border-bottom:1px solid #b9cbdc;padding:12px 0}
+summary{cursor:pointer;font-weight:500}
+details p{margin:8px 0 0}
+footer{color:var(--muted);font-size:14px;padding:0 max(5vw,16px) 40px}
+@media(max-width:600px){.brand img{width:64px;height:64px;border-radius:14px}}
